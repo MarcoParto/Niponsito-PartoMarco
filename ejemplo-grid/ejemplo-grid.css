@@ -1,0 +1,148 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 75px auto 140px;    
+    grid-template-areas:
+        "nav header header header header"
+        "nav main main main main"
+        "nav footer footer footer footer"
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    font-family: 'Montserrat', sans-serif;
+    color: #E74948;       
+}
+
+.list-item a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #E74948;
+    padding: 12px;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    width: 100%;
+    top: 0;
+    left: 0;    
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+header ul{
+    padding-right: 32px;
+}
+
+header img{
+    padding-left: 32px;
+    height: 75Px;
+    width: auto;    
+}
+
+nav{
+    background-color: black;
+    grid-area: nav;        
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+}
+
+main{
+    background-color: darkgrey;
+    grid-area: main;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;      
+}
+
+section h2{
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+section .products-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section .products-container .products{
+    width: 400px;
+    height: 400px;    
+    padding: 30px;
+}
+
+section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.botoms{
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #E74948;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    width: fit-content;
+}
+
+footer{
+    grid-area: footer;
+    height: 140px;
+    width: 100%;
+    background-color: black;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 32px;
+}
+
+footer hr{
+    width: 60%;    
+    border-color: #E74948;
+    margin: auto;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+footer p{
+    color: #E74948;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+footer img{
+    margin-top: 12px;
+    height: 75px;
+    width: auto;
+}

@@ -124,7 +124,7 @@ footer img{
 
 
 /* TARJETAS HORIZONTALES */
-.horizontalCard{
+.horizontal-card{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -132,11 +132,11 @@ footer img{
     margin: 0px 100px 50px 100px;
 }
 
-main .horizontalCard:nth-child(3){
+main .horizontal-card:nth-child(3){
     flex-direction: row-reverse;
 }
 
-.horizontalCard .text, .horizontalCard .multimediaContainer{
+.horizontal-card .text, .horizontal-card .multimedia-container{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -144,13 +144,13 @@ main .horizontalCard:nth-child(3){
     
 }
 
-.horizontalCard .multimediaContainer img, .horizontalCard .multimediaContainer iframe{
+.horizontal-card .multimedia-container img, .horizontal-card .multimedia-container iframe{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.horizontalCard .text{
+.horizontal-card .text{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,15 +159,15 @@ main .horizontalCard:nth-child(3){
     padding: 50px;
 }
 
-.horizontalCard h2{
+.horizontal-card h2{
     padding-bottom: 12px;
 }
 
-.horizontalCard p{
+.horizontal-card p{
     padding-bottom: 12px;
 }
 
-.horizontalCard ul{
+.horizontal-card ul{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     padding-left: 50px;
@@ -253,7 +253,7 @@ main .horizontalCard:nth-child(3){
     padding-left: 100px;
 }
 
-#main-two{
+#productShow{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,30 +261,30 @@ main .horizontalCard:nth-child(3){
     margin: 0px 50px 50px 50px;
 }
 
-#main-two h2{
+#productShow h2{
     color: black;
     text-align: center;
 }
 
-#main-two .products-container{
+#productShow .products-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#main-two .products-container .products{
+#productShow .products-container .products{
     width: 300px;
     height: 300px;
     padding: 10px;
 }
 
-#main-two img{
+#productShow img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-#main-four{
+#callAction{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,18 +295,18 @@ main .horizontalCard:nth-child(3){
     margin: 100px 100px 50px 100px;
 }
 
-#main-four h2{
+#callAction h2{
     padding-bottom: 12px;
 }
 
-#main-four p{
+#callAction p{
     padding-bottom: 12px;
 }
 /* FIN INDEX */
 
 
 /* ABOUT */
-#about-title{
+#aboutTitle{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -314,19 +314,19 @@ main .horizontalCard:nth-child(3){
     margin: 85px 0px 100px 0px;
 }
 
-#about-title img{
+#aboutTitle img{
     height: 50vh;
     width: 100vh;
     object-fit: cover;
     padding: 20px 0px;
 }
 
-#about-title div{
+#aboutTitle div{
     text-align: center;
     margin: 0px 200px;
 }
 
-#about-one{
+#aboutOne{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -334,7 +334,7 @@ main .horizontalCard:nth-child(3){
     margin: 0px 50px 100px 50px;
 }
 
-#about-one .text, #about-one .image-container{
+#aboutOne .text, #aboutOne .image-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -342,13 +342,13 @@ main .horizontalCard:nth-child(3){
     width: 50%;
 }
 
-#about-one .image-container img{
+#aboutOne .image-container img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-#about-one .text{
+#aboutOne .text{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,40 +357,40 @@ main .horizontalCard:nth-child(3){
     padding: 50px;
 }
 
-#about-one h2{
+#aboutOne h2{
     padding-bottom: 12px;
 }
 
-#about-one p{
+#aboutOne p{
     padding-bottom: 12px;
 }
 
-#about-two{
+#aboutTwo{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 }
 
-#about-two h2{
+#aboutTwo h2{
     color: black;
     text-align: center;
     padding-bottom: 12px;
 }
 
-#about-two h3{
+#aboutTwo h3{
     color: #E74948;
     font-weight: 600;
     padding-bottom: 40px;
 }
 
-#about-two .textbox-container{
+#aboutTwo .textbox-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#about-two .textbox-container .textbox{
+#aboutTwo .textbox-container .textbox{
     border: solid 1px black;
     padding: 20px;
     display: inline-block;
@@ -402,7 +402,7 @@ main .horizontalCard:nth-child(3){
     margin: 0px 20px;
 }
 
-#about-three{
+#aboutThree{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -410,37 +410,37 @@ main .horizontalCard:nth-child(3){
     margin: 0px 50px 100px 50px;
 }
 
-#about-three h2{
+#aboutThree h2{
     color: black;
     text-align: center;
     padding-bottom: 12px;
 }
 
-#about-three h3{
+#aboutThree h3{
     color: #E74948;
     padding-bottom: 24px;
 }
 
-#about-three .gallery{
+#aboutThree .gallery{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#about-three .small-images{
+#aboutThree .small-images{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#about-three .small-images img{
+#aboutThree .small-images img{
     height: 250px;
     width: 250px;
     object-fit: cover;
     padding: 6px;
 }
 
-#about-three .big-image img{
+#aboutThree .big-image img{
     height: 512px;
     width: 512px;
     object-fit: cover;
@@ -596,36 +596,36 @@ form div label{
     /* FIN CONTACT */
 
     /* CARDS */
-    .horizontalCard{
+    .horizontal-card{
         flex-direction: column-reverse !important;
         align-items: center;
         height: auto;
         margin: 0px 0px 50px 0px;
     }
 
-    .horizontalCard .multimediaContainer{
+    .horizontal-card .multimedia-container{
         height: 360px;
         width: 360px;
     }
 
-    .horizontalCard .text{
+    .horizontal-card .text{
         width: auto;
         padding: 20px 20px 0px 20px;
     }
 
-    .horizontalCard h2{
+    .horizontal-card h2{
         font-size: 24px;
         text-align: center;
         padding-bottom: 8px;
     }
 
-    .horizontalCard p{
+    .horizontal-card p{
         font-size: 16px;
         text-align: center;
         padding-bottom: 8px;
     }
 
-    .horizontalCard ul{
+    .horizontal-card ul{
         font-size: 16px;
     }
     /* FIN CARDS */

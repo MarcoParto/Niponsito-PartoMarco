@@ -40,11 +40,11 @@ p{
 
 
 /* HEADER */
-.navbar{
+.header{
     background-color: black !important;
 }
 
-.navbar-nav a{
+.header-items a{
     color: #E74948 !important;
     font-size: 16px !important;
     font-family: 'Bachelor', serif;
@@ -524,18 +524,18 @@ form div label{
 @media (max-width:480px){
 
     /* HEADER */
-    header nav{
+    .header{
         justify-content: center;
         max-width: 100%;
         height: auto;
         background-color: black !important;
     }
 
-    .navbar-nav a{
+    .header-items a{
         font-size: 12px !important;
     }
 
-    header nav div{
+    .header div{
         width: auto !important;
     }
 
@@ -555,12 +555,13 @@ form div label{
         display: none;
     }
 
-    footer .container{
+    footer .contenedor{
         flex-direction: column;
-        margin: 0px
+        align-items: center; 
+        margin: 0px;
     }
 
-    footer .container .icons{
+    footer .contenedor .icons{
         margin-top: 16px;
     }
     /* FIN FOOTER */
@@ -630,5 +631,37 @@ form div label{
     }
     /* FIN CARDS */
 
+    /* PRODUCTS */
+    .product-mobile{
+        flex-direction: column !important;
+     }
 
+    #productOthers{
+        align-items: center;
+        padding: 20px 45px;
+    }
+
+    #productOthers h2{
+        font-size: 24px;
+        padding-bottom: 8px;
+    }
+
+    #productOthers h3{
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+
+    #productOthers .products-container{
+        flex-direction: column;
+    }
+
+    #productOthers .products-container .products{
+        width: 350px;
+    }
+
+    #productOthers img{
+        height: 400px;;
+        padding-bottom: 16px;
+    }
+    /* FIN PRODUCTS */
 }

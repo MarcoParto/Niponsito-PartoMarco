@@ -1,0 +1,15 @@
+/* BOTONES */
+.botoms{
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #E74948;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    width: fit-content;
+    &:hover{
+        background-color: #E74948;
+        color: black;
+    }
+}

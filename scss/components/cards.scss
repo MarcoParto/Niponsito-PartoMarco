@@ -9,13 +9,11 @@
         width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center;     
-        .multimedia-container{
-            img, iframe{
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
+        justify-content: center;    
+        img, iframe{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
     .text{

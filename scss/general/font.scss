@@ -1,0 +1,19 @@
+// BASE TEXT
+h1{
+    font-family: 'Bachelor', serif;
+    font-size: $title-l;
+}
+
+h2{   
+    font-weight: 600;
+    font-size: $title-md;
+}
+
+h3{ 
+    font-weight: 600;
+    font-size: $sub-title;
+}
+
+p{    
+    font-size: $paragraph;
+}

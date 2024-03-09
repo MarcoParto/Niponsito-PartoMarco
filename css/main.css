@@ -355,6 +355,17 @@ footer .contenedor nav ul .list-item a {
   text-align: center;
   margin: 0px 200px;
 }
+@media (max-width: 480px) {
+  #aboutTitle {
+    margin: 85px 0px 50px 0px;
+  }
+  #aboutTitle img {
+    width: 100%;
+  }
+  #aboutTitle div {
+    margin: 0px;
+  }
+}
 
 #aboutOne {
   display: flex;
@@ -390,6 +401,22 @@ footer .contenedor nav ul .list-item a {
 #aboutOne p {
   padding-bottom: 12px;
 }
+@media (max-width: 480px) {
+  #aboutOne {
+    flex-direction: column;
+    height: auto;
+  }
+  #aboutOne .image-container {
+    width: 100%;
+  }
+  #aboutOne .image-container img {
+    height: 360px;
+  }
+  #aboutOne .text {
+    width: 100%;
+    padding: 10px;
+  }
+}
 
 #aboutTwo {
   display: flex;
@@ -423,6 +450,17 @@ footer .contenedor nav ul .list-item a {
   overflow: hidden;
   margin: 0px 20px;
 }
+@media (max-width: 480px) {
+  #aboutTwo h3 {
+    text-align: center;
+  }
+  #aboutTwo .textbox-container {
+    flex-direction: column;
+  }
+  #aboutTwo .textbox-container .textbox {
+    margin: 10px;
+  }
+}
 
 #aboutThree {
   display: flex;
@@ -445,22 +483,41 @@ footer .contenedor nav ul .list-item a {
   flex-direction: row;
   justify-content: space-between;
 }
-#aboutThree .small-images {
+#aboutThree .gallery .small-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#aboutThree .small-images img {
+#aboutThree .gallery .small-images img {
   height: 250px;
   width: 250px;
   object-fit: cover;
   padding: 6px;
 }
-#aboutThree .big-image img {
+#aboutThree .gallery .big-image img {
   height: 512px;
   width: 512px;
   object-fit: cover;
   padding: 6px 6px;
+}
+@media (max-width: 480px) {
+  #aboutThree h3 {
+    text-align: center;
+  }
+  #aboutThree .gallery {
+    flex-direction: column;
+  }
+  #aboutThree .gallery .small-images {
+    flex-direction: row;
+  }
+  #aboutThree .gallery .small-images img {
+    height: 160px;
+    width: 160px;
+  }
+  #aboutThree .gallery .big-image img {
+    height: 320px;
+    width: 320px;
+  }
 }
 
 /* PRODUCTS */
@@ -509,25 +566,25 @@ footer .contenedor nav ul .list-item a {
   text-align: center;
 }
 @media (max-width: 480px) {
-  #productOthers #productOthers {
+  #productOthers {
     align-items: center;
     padding: 20px 45px;
   }
-  #productOthers #productOthers h2 {
+  #productOthers h2 {
     font-size: 24px;
     padding-bottom: 8px;
   }
-  #productOthers #productOthers h3 {
+  #productOthers h3 {
     font-size: 16px;
     padding-bottom: 8px;
   }
-  #productOthers #productOthers .products-container {
+  #productOthers .products-container {
     flex-direction: column;
   }
-  #productOthers #productOthers .products-container .products {
+  #productOthers .products-container .products {
     width: 350px;
   }
-  #productOthers #productOthers img {
+  #productOthers img {
     height: 400px;
     padding-bottom: 16px;
   }

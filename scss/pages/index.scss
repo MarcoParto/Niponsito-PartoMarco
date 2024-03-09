@@ -23,6 +23,24 @@
         color: #E74948;
         padding-left: 100px;
     }
+    @include media-query-mobile(){
+        padding-top: 90px;
+        background-position: 65% 65%;
+        justify-content: start;
+        h1{
+            padding-left: 0px;
+            text-align: center;
+        }
+        h2{
+            padding-left: 0px;
+            text-align: center;
+        }
+        h3{
+            padding-left: 0px;
+            padding-top: 65vh;
+            text-align: center;
+        }
+    }
 }
 
 #productShow{
@@ -50,6 +68,11 @@
         width: 100%;
         object-fit: cover;
     }
+    @include media-query-mobile(){
+        .products-container{
+            flex-direction: column;
+        }
+    }
 }
 
 #callAction{
@@ -66,5 +89,14 @@
     }
     p{
         padding-bottom: 12px;
+    }
+    @include media-query-mobile(){
+        margin: 100px 0px;
+    }
+}
+
+.index-card{
+    @include media-query-mobile(){
+        flex-direction: column !important;
     }
 }

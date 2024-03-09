@@ -100,6 +100,7 @@ p {
   .horizontal-card .text {
     width: auto;
     padding: 20px 20px 0px 20px;
+    align-items: center;
   }
   .horizontal-card .text h2 {
     font-size: 24px;
@@ -292,6 +293,26 @@ footer .contenedor nav ul .list-item a {
   color: #E74948;
   padding-left: 100px;
 }
+@media (max-width: 480px) {
+  #hero {
+    padding-top: 90px;
+    background-position: 65% 65%;
+    justify-content: start;
+  }
+  #hero h1 {
+    padding-left: 0px;
+    text-align: center;
+  }
+  #hero h2 {
+    padding-left: 0px;
+    text-align: center;
+  }
+  #hero h3 {
+    padding-left: 0px;
+    padding-top: 65vh;
+    text-align: center;
+  }
+}
 
 #productShow {
   display: flex;
@@ -319,6 +340,11 @@ footer .contenedor nav ul .list-item a {
   width: 100%;
   object-fit: cover;
 }
+@media (max-width: 480px) {
+  #productShow .products-container {
+    flex-direction: column;
+  }
+}
 
 #callAction {
   display: flex;
@@ -335,6 +361,17 @@ footer .contenedor nav ul .list-item a {
 }
 #callAction p {
   padding-bottom: 12px;
+}
+@media (max-width: 480px) {
+  #callAction {
+    margin: 100px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-card {
+    flex-direction: column !important;
+  }
 }
 
 /* ABOUT */

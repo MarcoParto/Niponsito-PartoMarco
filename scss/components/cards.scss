@@ -37,11 +37,37 @@
             padding-bottom: 6px;
         }
     }
+    &:nth-of-type(odd){
+        flex-direction: row-reverse;
+    }
+    @include media-query-mobile(){
+        flex-direction: column-reverse !important;
+        align-items: center;
+        height: auto;
+         margin: 0px 0px 50px 0px;
+        .multimedia-container{
+            height: 360px;
+            width: 360px;
+        }
+        .text{
+            width: auto;
+            padding: 20px 20px 0px 20px;
+            h2{
+                font-size: 24px;
+                text-align: center;
+                padding-bottom: 8px;
+            }
+            p{
+                font-size: 16px;
+                text-align: center;
+                padding-bottom: 8px;
+            }
+            ul{
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 
-// ME FALTA METER ESTE
-main .horizontal-card:nth-child(3){
-    flex-direction: row-reverse;
-}
 

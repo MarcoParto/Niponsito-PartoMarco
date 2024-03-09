@@ -13,4 +13,26 @@ header{
             }
         }
     }
+    @include media-query-mobile(){
+        .header{
+            justify-content: center;
+            max-width: 100%;
+            height: auto;
+            background-color: black !important;
+            div{
+                width: auto !important;
+                img{
+                    height: 50px;
+                    width: 150px;
+                }
+                .header-items{
+                    a{
+                        font-size: 12px !important;
+                    }
+                }
+            }  
+        } 
+    }
 }
+
+

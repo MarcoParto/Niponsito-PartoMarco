@@ -59,4 +59,25 @@ footer{
             }
         }
     }
+    @include media-query-mobile(){
+        .contenedor{
+            flex-direction: column;
+            align-items: center; 
+            margin: 0px;
+            .icons{
+                margin-top: 16px;
+            }
+            img{
+                height: 50px;
+                width: 150px;
+            }
+            nav{
+                ul{
+                    display: none;
+                }
+            }
+        }
+    }
 }
+
+

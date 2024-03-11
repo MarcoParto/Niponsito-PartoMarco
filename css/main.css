@@ -28,17 +28,17 @@ p {
 }
 
 /* BOTONES */
-.botoms {
+.buttons {
   background-color: black;
   padding: 12px 24px;
   border-radius: 8px;
   color: #E74948;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   width: fit-content;
 }
-.botoms:hover {
+.buttons:hover {
   background-color: #E74948;
   color: black;
 }
@@ -48,6 +48,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: none;
   height: 500px;
   margin: 0px 100px 50px 100px;
 }
@@ -56,6 +57,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: none;
 }
 .horizontal-card .multimedia-container img, .horizontal-card .multimedia-container iframe {
   height: 100%;
@@ -67,8 +69,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: white;
-  color: black;
+  align-items: none;
   padding: 50px;
 }
 .horizontal-card .text h2 {
@@ -129,12 +130,14 @@ header .header #navbarNav .header-items a {
   font-size: 16px !important;
   font-family: "Bachelor", serif;
 }
+header .header #navbarNav .header-items a:hover {
+  color: white !important;
+}
 @media (max-width: 480px) {
   header .header {
     justify-content: center;
     max-width: 100%;
     height: auto;
-    background-color: black !important;
   }
   header .header div {
     width: auto !important;
@@ -184,8 +187,8 @@ footer .contenedor img {
 footer .contenedor .icons {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 footer .contenedor .icons a {
   padding: 0px 6px;
@@ -195,9 +198,9 @@ footer .contenedor .icons a {
 footer .contenedor nav ul {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
-  align-items: center !important;
   justify-content: center !important;
+  align-items: center !important;
+  list-style-type: none;
 }
 footer .contenedor nav ul .list-item a {
   text-decoration: none;
@@ -278,6 +281,7 @@ footer .contenedor nav ul .list-item a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: none;
   margin-bottom: 60px;
 }
 #hero h1 {
@@ -317,6 +321,7 @@ footer .contenedor nav ul .list-item a {
 #productShow {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 60px 0px;
   margin: 0px 50px 50px 50px;
@@ -329,6 +334,8 @@ footer .contenedor nav ul .list-item a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
 }
 #productShow .products-container .products {
   width: 300px;
@@ -339,6 +346,11 @@ footer .contenedor nav ul .list-item a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: all 1s ease;
+}
+#productShow img:hover {
+  transform: scale(1.5, 1.5);
+  transition: all 1s ease;
 }
 @media (max-width: 480px) {
   #productShow .products-container {
@@ -350,6 +362,7 @@ footer .contenedor nav ul .list-item a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: none;
   text-align: center;
   height: auto;
   padding: 0px 50px;
@@ -408,6 +421,7 @@ footer .contenedor nav ul .list-item a {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  align-items: center;
   height: 500px;
   margin: 0px 50px 100px 50px;
 }
@@ -427,7 +441,7 @@ footer .contenedor nav ul .list-item a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   width: 50%;
   color: black;
   padding: 50px;
@@ -458,6 +472,7 @@ footer .contenedor nav ul .list-item a {
 #aboutTwo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 100px;
 }
@@ -475,6 +490,7 @@ footer .contenedor nav ul .list-item a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 #aboutTwo .textbox-container .textbox {
   border: solid 1px black;
@@ -519,23 +535,35 @@ footer .contenedor nav ul .list-item a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 #aboutThree .gallery .small-images {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #aboutThree .gallery .small-images img {
   height: 250px;
   width: 250px;
   object-fit: cover;
   padding: 6px;
+  transition: all 1s ease;
+}
+#aboutThree .gallery .small-images img:hover {
+  transform: scale(1.25, 1.25);
+  transition: all 1s ease;
 }
 #aboutThree .gallery .big-image img {
   height: 512px;
   width: 512px;
   object-fit: cover;
   padding: 6px 6px;
+  transition: all 1s ease;
+}
+#aboutThree .gallery .big-image img:hover {
+  transform: scale(1.25, 1.25);
+  transition: all 1s ease;
 }
 @media (max-width: 480px) {
   #aboutThree h3 {
@@ -567,6 +595,7 @@ footer .contenedor nav ul .list-item a {
 #productOthers {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 60px 45px;
   margin-bottom: 60px;
@@ -585,11 +614,13 @@ footer .contenedor nav ul .list-item a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 #productOthers .products-container .products {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 500px;
   padding: 30px;
 }

@@ -6,21 +6,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox(column, center, none);
     margin-bottom: 60px;
     h1{
-        color: #E74948;
+        color: $color-tertiary;
         padding-left: 100px;
     }
     h2{
-        color: white;
+        color: $color-secondary;
         margin-bottom: 12px;
         padding-left: 100px;
     }
     h3{
-        color: #E74948;
+        color: $color-tertiary;
         padding-left: 100px;
     }
     @include media-query-mobile(){
@@ -44,19 +42,16 @@
 }
 
 #productShow{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, center, center);
     padding: 60px 0px;
     margin: 0px 50px 50px 50px;
     h2{
-        color: black;
+        color:$color-primary;
         text-align: center;
     }
     .products-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flexbox(row, space-between, center);
+        margin: 20px 0px;
         .products{
             width: 300px;
             height: 300px;
@@ -67,6 +62,11 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        transition: all 1s ease;
+        &:hover{
+            transform: scale(1.5, 1.5);
+            transition: all 1s ease;
+        }
     }
     @include media-query-mobile(){
         .products-container{
@@ -76,9 +76,7 @@
 }
 
 #callAction{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox(column, center, none);
     text-align: center;
     height: auto;
     padding: 0px 50px;

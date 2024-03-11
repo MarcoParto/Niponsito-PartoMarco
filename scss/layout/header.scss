@@ -1,14 +1,17 @@
 /* HEADER */
 header{
     .header{
-        background-color: black !important;
+        background-color: $color-primary !important;
         #navbarNav{
-            background-color: black;
+            background-color: $color-primary;
             .header-items{
                 a{
-                    color: #E74948 !important;
+                    color: $color-tertiary !important;
                     font-size: 16px !important;
                     font-family: 'Bachelor', serif;
+                    &:hover{
+                        color: $color-secondary !important;
+                    }
                 }
             }
         }
@@ -18,7 +21,6 @@ header{
             justify-content: center;
             max-width: 100%;
             height: auto;
-            background-color: black !important;
             div{
                 width: auto !important;
                 img{

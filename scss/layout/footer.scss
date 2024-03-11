@@ -2,11 +2,11 @@
 footer{
     height: 140px;
     width: 100%;
-    background-color: black;
+    background-color: $color-primary;
     hr{
         width: 60%;
-        border-color: #E74948;
-        background-color: #E74948;
+        border-color: $color-tertiary;
+        background-color: $color-tertiary;
         height: 2px;
         margin: auto;
         text-align: center;
@@ -14,15 +14,12 @@ footer{
         margin-bottom: 8px;   
     }
     p{
-        color: #E74948;
+        color: $color-tertiary;
         text-align: center;
         font-size: 12px;
     }
     .contenedor{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox(row, space-between,center);
         margin: 0px 32px;
         img{
             margin-top: 12px;
@@ -30,28 +27,22 @@ footer{
             width: auto;
         } 
         .icons{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            @include flexbox(row, center, center);
             a{
                 padding: 0px 6px;
                 text-decoration: none;
-                color: white;
+                color: $color-secondary;
             }
         }
         nav{
             ul{
-                display: flex;
-                flex-direction: row;
+                @include flexbox(row, center !important, center !important);
                 list-style-type: none;
-                align-items: center !important;
-                justify-content: center !important;
                 .list-item{ 
                     a{
                         text-decoration: none;
-                        font-size: 16px;
-                        color: #E74948;
+                        font-size: $paragraph;
+                        color: $color-tertiary;
                         padding: 12px;
                         font-family: 'Bachelor', serif;
                     }

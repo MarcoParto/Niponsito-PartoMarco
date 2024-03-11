@@ -6,29 +6,23 @@
 }
 
 #productOthers{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, center, center);
     padding: 60px 45px;
     margin-bottom: 60px;
     h2{
-        color: black;
+        color: $color-primary;
         text-align: center;
         padding-bottom: 12px;
     }
     h3{
-        color: #E74948;
+        color: $color-tertiary;
         font-weight: 600;
         padding-bottom: 32px;
     }
     .products-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flexbox(row, space-between, center);
         .products{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flexbox(column, space-between, center);
             width: 500px;
             padding: 30px;
         }

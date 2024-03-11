@@ -1,9 +1,6 @@
 /* ABOUT */
 #aboutTitle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(column, center, center);
     margin: 85px 0px 100px 0px;
     img{
         height: 50vh;
@@ -27,16 +24,11 @@
 }
 
 #aboutOne{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    @include flexbox(row-reverse, center, center);
     height: 500px;
     margin: 0px 50px 100px 50px;
     .image-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(column, center, center);
         width: 50%;   
         img{
             height: 100%;
@@ -45,12 +37,9 @@
         }
     }
     .text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+        @include flexbox(column, center, center);
         width: 50%;
-        color: black;
+        color: $color-primary;
         padding: 50px;
     }
     h2{
@@ -76,24 +65,20 @@
 }
 
 #aboutTwo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, center, center);
     margin-bottom: 100px;
     h2{
-        color: black;
+        color: $color-primary;
         text-align: center;
         padding-bottom: 12px;
     }
     h3{
-        color: #E74948;
+        color: $color-tertiary;
         font-weight: 600;
         padding-bottom: 40px;
     }
     .textbox-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flexbox(row, space-between, center);
         .textbox{
             border: solid 1px black;
             padding: 20px;
@@ -120,33 +105,31 @@
 }
 
 #aboutThree{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(column, center, center);
     margin: 0px 50px 100px 50px;
     h2{
-        color: black;
+        color: $color-primary;
         text-align: center;
         padding-bottom: 12px;
     }
     h3{
-        color: #E74948;
+        color: $color-tertiary;
         padding-bottom: 24px;
     }
     .gallery{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flexbox(row, space-between, center);
         .small-images{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flexbox(column, center, center);
             img{
                 height: 250px;
                 width: 250px;
                 object-fit: cover;
                 padding: 6px;
+                transition: all 1s ease;
+                &:hover{
+                    transform: scale(1.25, 1.25);
+                    transition: all 1s ease;
+                }
             }
         }
         .big-image{ 
@@ -155,6 +138,11 @@
                 width: 512px;
                 object-fit: cover;
                 padding: 6px 6px;
+                transition: all 1s ease;
+                &:hover{
+                    transform: scale(1.25, 1.25);
+                    transition: all 1s ease;
+                }
             }          
         }
     }

@@ -25,13 +25,13 @@
 
 #aboutOne{
     @include flexbox(row-reverse, center, center);
-    height: 500px;
+    height: auto;
     margin: 0px 50px 100px 50px;
     .image-container{
         @include flexbox(column, center, center);
         width: 50%;   
         img{
-            height: 100%;
+            height: auto;
             width: 100%;
             object-fit: cover;
         }
@@ -40,13 +40,13 @@
         @include flexbox(column, center, center);
         width: 50%;
         color: $color-primary;
-        padding: 50px;
-    }
-    h2{
-        padding-bottom: 12px;
-    }
-    p{
-        padding-bottom: 12px;
+        padding: 20px;
+        h2{
+            padding-bottom: 12px;
+        }
+        p{
+            padding-bottom: 6px;
+        }
     }
     @include media-query-mobile(){
         flex-direction: column;
@@ -76,6 +76,7 @@
         color: $color-tertiary;
         font-weight: 600;
         padding-bottom: 40px;
+        text-align: center;
     }
     .textbox-container{
         @include flexbox(row, space-between, center);

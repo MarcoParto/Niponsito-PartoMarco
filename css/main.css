@@ -422,7 +422,7 @@ footer .contenedor nav ul .list-item a {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: auto;
   margin: 0px 50px 100px 50px;
 }
 #aboutOne .image-container {
@@ -433,7 +433,7 @@ footer .contenedor nav ul .list-item a {
   width: 50%;
 }
 #aboutOne .image-container img {
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: cover;
 }
@@ -446,11 +446,11 @@ footer .contenedor nav ul .list-item a {
   color: black;
   padding: 50px;
 }
-#aboutOne h2 {
+#aboutOne .text h2 {
   padding-bottom: 12px;
 }
-#aboutOne p {
-  padding-bottom: 12px;
+#aboutOne .text p {
+  padding-bottom: 6px;
 }
 @media (max-width: 480px) {
   #aboutOne {
@@ -485,6 +485,7 @@ footer .contenedor nav ul .list-item a {
   color: #E74948;
   font-weight: 600;
   padding-bottom: 40px;
+  text-align: center;
 }
 #aboutTwo .textbox-container {
   display: flex;

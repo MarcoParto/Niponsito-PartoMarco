@@ -1,10 +1,14 @@
-/* PRODUCTS */
+// PRODUCTS 
+
+// CLASS FOR RESPONSIVE
 .product-mobile{
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         flex-direction: column !important;
     }
 }
 
+// SECTION PRODUCT OTHERS
 #productOthers{
     @include flexbox(column, center, center);
     padding: 60px 45px;
@@ -38,6 +42,7 @@
             text-align: center;
         }
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         align-items: center;
         padding: 20px 45px;

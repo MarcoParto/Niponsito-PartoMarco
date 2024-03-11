@@ -1,4 +1,6 @@
-/* INDEX */
+// INDEX
+
+// SECTION HERO
 #hero{
     width: 100%;
     height: 100vh;
@@ -21,6 +23,7 @@
         color: $color-tertiary;
         padding-left: 100px;
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         padding-top: 90px;
         background-position: 65% 65%;
@@ -41,6 +44,7 @@
     }
 }
 
+// SECTION TWO
 #productShow{
     @include flexbox(column, center, center);
     padding: 60px 0px;
@@ -68,6 +72,7 @@
             transition: all 1s ease;
         }
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         .products-container{
             flex-direction: column;
@@ -75,6 +80,7 @@
     }
 }
 
+// SECTION FOUR
 #callAction{
     @include flexbox(column, center, none);
     text-align: center;
@@ -88,12 +94,18 @@
     p{
         padding-bottom: 12px;
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         margin: 100px 0px;
     }
 }
 
+// EDITING CLASS HORIZONTAL-CARDS
 .index-card{
+    h2{
+        font-size: 40px !important;
+    }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         flex-direction: column !important;
     }

@@ -1,4 +1,4 @@
-/* TARJETAS HORIZONTALES */
+// CARDS
 .horizontal-card{
     @include flexbox(row, center, none);
     height: 500px;
@@ -14,13 +14,16 @@
     }
     .text{
         width: 50%;
-        @include flexbox(column, center, none);
-        padding: 50px;
+        @include flexbox(column, center, center);
+        padding: 25px;
         h2{
+            font-size: 24px;
             padding-bottom: 12px;
+            text-align: center;
         }
         p{
-            padding-bottom: 12px;
+            padding-bottom: 6px;
+            text-align: center;
         }
         ul{
             font-family: 'Montserrat', sans-serif;
@@ -32,6 +35,7 @@
     &:nth-of-type(odd){
         flex-direction: row-reverse;
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         flex-direction: column-reverse !important;
         align-items: center;

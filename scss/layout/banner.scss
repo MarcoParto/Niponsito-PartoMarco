@@ -1,4 +1,4 @@
-/* BANNERS */
+// BANNERS
 #banner{
     @include flexbox(column, center, center);
     width: 100%;
@@ -16,6 +16,7 @@
     h3{
         color: $color-tertiary;
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         height: auto;
         align-items: center !important;

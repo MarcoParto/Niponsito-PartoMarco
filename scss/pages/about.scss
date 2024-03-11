@@ -1,9 +1,11 @@
-/* ABOUT */
+// ABOUT
+
+// SECTION TITTLE
 #aboutTitle{
     @include flexbox(column, center, center);
     margin: 85px 0px 100px 0px;
     img{
-        height: 50vh;
+        height: 70vh;
         width: 100vh;
         object-fit: cover;
         padding: 20px 0px;
@@ -12,6 +14,7 @@
         text-align: center;
         margin: 0px 200px;
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         margin: 85px 0px 50px 0px;
         img{
@@ -23,15 +26,17 @@
     }
 }
 
+// SECTION ONE
 #aboutOne{
     @include flexbox(row-reverse, center, center);
-    height: auto;
+    height: 500px;
     margin: 0px 50px 100px 50px;
     .image-container{
         @include flexbox(column, center, center);
-        width: 50%;   
+        width: 50%;
+        height: 100%;   
         img{
-            height: auto;
+            height: 100%;
             width: 100%;
             object-fit: cover;
         }
@@ -48,6 +53,7 @@
             padding-bottom: 6px;
         }
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         flex-direction: column;
         height: auto;
@@ -64,6 +70,7 @@
     }
 }
 
+//SECTION TWO
 #aboutTwo{
     @include flexbox(column, center, center);
     margin-bottom: 100px;
@@ -92,6 +99,7 @@
             margin: 0px 20px;
         }
     }
+    // RESPOSIVE MOBILE
     @include media-query-mobile(){
         h3{
             text-align: center;
@@ -105,6 +113,7 @@
     }
 }
 
+// SECTION THREE
 #aboutThree{
     @include flexbox(column, center, center);
     margin: 0px 50px 100px 50px;
@@ -147,6 +156,7 @@
             }          
         }
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         h3{
             text-align: center;

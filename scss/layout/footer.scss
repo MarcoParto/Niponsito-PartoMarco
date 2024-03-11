@@ -1,4 +1,4 @@
-/* FOOTER */
+// FOOTER
 footer{
     height: 140px;
     width: 100%;
@@ -34,22 +34,8 @@ footer{
                 color: $color-secondary;
             }
         }
-        nav{
-            ul{
-                @include flexbox(row, center !important, center !important);
-                list-style-type: none;
-                .list-item{ 
-                    a{
-                        text-decoration: none;
-                        font-size: $paragraph;
-                        color: $color-tertiary;
-                        padding: 12px;
-                        font-family: 'Bachelor', serif;
-                    }
-                }
-            }
-        }
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         .contenedor{
             flex-direction: column;
@@ -61,11 +47,6 @@ footer{
             img{
                 height: 50px;
                 width: 150px;
-            }
-            nav{
-                ul{
-                    display: none;
-                }
             }
         }
     }

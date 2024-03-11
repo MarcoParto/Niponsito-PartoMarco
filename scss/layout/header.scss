@@ -1,4 +1,4 @@
-/* HEADER */
+// HEADER - EDITING BOOTSTRAP
 header{
     .header{
         background-color: $color-primary !important;
@@ -16,6 +16,7 @@ header{
             }
         }
     }
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         .header{
             justify-content: center;

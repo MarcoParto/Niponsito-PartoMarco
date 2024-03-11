@@ -364,6 +364,9 @@ footer .contenedor .icons a {
 .index-card h2 {
   font-size: 40px !important;
 }
+.index-card .text {
+  margin-bottom: 25px;
+}
 @media (max-width: 480px) {
   .index-card {
     flex-direction: column !important;
@@ -428,6 +431,7 @@ footer .contenedor .icons a {
   width: 50%;
   color: black;
   padding: 20px;
+  text-align: center;
 }
 #aboutOne .text h2 {
   padding-bottom: 12px;
@@ -449,6 +453,9 @@ footer .contenedor .icons a {
   #aboutOne .text {
     width: 100%;
     padding: 10px;
+  }
+  #aboutOne h2 {
+    font-size: 30px;
   }
 }
 
@@ -488,7 +495,11 @@ footer .contenedor .icons a {
   margin: 0px 20px;
 }
 @media (max-width: 480px) {
+  #aboutTwo h2 {
+    font-size: 30px;
+  }
   #aboutTwo h3 {
+    font-size: 16px;
     text-align: center;
   }
   #aboutTwo .textbox-container {
@@ -550,7 +561,11 @@ footer .contenedor .icons a {
   transition: all 1s ease;
 }
 @media (max-width: 480px) {
+  #aboutThree h2 {
+    font-size: 30px;
+  }
   #aboutThree h3 {
+    font-size: 16px;
     text-align: center;
   }
   #aboutThree .gallery {

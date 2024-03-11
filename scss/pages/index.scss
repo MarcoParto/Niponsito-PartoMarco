@@ -105,6 +105,9 @@
     h2{
         font-size: 40px !important;
     }
+    .text{
+        margin-bottom: 25px;
+    }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         flex-direction: column !important;

@@ -14,8 +14,14 @@
         text-align: center;
         margin: 0px 200px;
     }
+    // RESPONSIVE DESKTOP XXL
+    @include media-query-desktop-xxl(){
+        img{
+            width: 140vh;
+        }
+    }
     // RESPONSIVE TABLET
-     @include media-query-tablet(){
+    @include media-query-tablet(){
         margin: 85px 0px 50px 0px;
         img{
             height: 75vh;
@@ -24,8 +30,7 @@
         div{
             margin: 0px;
         }
-        p{
-            font-size: $sub-title;
+        h3{
             padding: 0px 20px 0px 20px;
         }
     }
@@ -54,6 +59,7 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
+            border: 1px solid black;
         }
     }
     .text{
@@ -68,6 +74,10 @@
         p{
             padding-bottom: 6px;
         }
+    }
+    // RESPONSIVE DESKTOP XXL
+    @include media-query-desktop-xxl(){
+        margin: 0px 200px 100px 200px;
     }
     // RESPONSIVE TABLET
     @include media-query-tablet(){
@@ -85,9 +95,6 @@
         }
         h2{
             font-size: $title-md;
-        }
-        p{
-            font-size: $sub-title;
         }
     }
     // RESPONSIVE MOBILE
@@ -139,7 +146,17 @@
             margin: 0px 20px;
         }
     }
-    // RESPOSIVE TABLET
+    // RESPONSIVE DESKTOP XXL
+    @include media-query-desktop-xxl(){
+        .textbox-container{
+            .textbox{
+                width: 350px;
+                height: 350px;
+                padding: 30px;
+            }
+        }
+    }
+    // RESPONSIVE TABLET
     @include media-query-tablet(){
         h2{
             font-size: $title-md;
@@ -147,22 +164,21 @@
         h3{
             font-size: $sub-title;
             text-align: center;
-            padding: 20px;
+            padding: 0px 20px 20px 20px;
         }
         .textbox-container{
             flex-direction: column;
             .textbox{
                 margin: 10px;
-                width: 400px;
-                height: 400px;
+                width: 350px;
+                height: 350px;
                 p{
-                    font-size: $sub-title;
                     padding: 20px;
                 }
             }
         }
     }
-    // RESPOSIVE MOBILE
+    // RESPONSIVE MOBILE
     @include media-query-mobile(){
         h2{
             font-size: 30px;
@@ -170,6 +186,7 @@
         h3{
             font-size: 16px;
             text-align: center;
+            padding: 0px 20px 20px 20px;
         }
         .textbox-container{
             flex-direction: column;

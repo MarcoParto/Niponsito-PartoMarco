@@ -7,7 +7,7 @@ header{
             .header-items{
                 a{
                     color: $color-tertiary !important;
-                    font-size: $paragraph !important;
+                    font-size: $sub-title;
                     font-family: 'Bachelor', serif;
                     &:hover{
                         color: $color-secondary !important;
@@ -31,7 +31,6 @@ header{
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         .header{
-            justify-content: center;
             max-width: 100%;
             height: auto;
             div{
@@ -42,7 +41,7 @@ header{
                 }
                 .header-items{
                     a{
-                        font-size: 12px !important;
+                        font-size: $paragraph !important;
                     }
                 }
             }  

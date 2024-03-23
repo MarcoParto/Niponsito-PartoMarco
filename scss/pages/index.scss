@@ -7,7 +7,7 @@
     background-image: url(../resources/images/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 20% 20%;
     @include flexbox(column, center, none);
     margin-bottom: 60px;
     h1{
@@ -38,7 +38,7 @@
         }
         h3{
             padding-left: 0px;
-            padding-top: 70vh;
+            padding-top: 65vh;
             text-align: center;
             font-size: 24px;
         }
@@ -58,7 +58,7 @@
         }
         h3{
             padding-left: 0px;
-            padding-top: 60vh;
+            padding-top: 65vh;
             text-align: center;
         }
     }
@@ -67,8 +67,7 @@
 // SECTION TWO
 #productShow{
     @include flexbox(column, center, center);
-    padding: 60px 0px;
-    margin: 0px 50px 50px 50px;
+    margin: 100px 50px;
     h2{
         color:$color-primary;
         text-align: center;
@@ -85,11 +84,21 @@
     img{
         height: 100%;
         width: 100%;
+        border: 1px solid black;
         object-fit: cover;
         transition: all 1s ease;
         &:hover{
             transform: scale(1.5, 1.5);
             transition: all 1s ease;
+        }
+    }
+    // RESPONSIVE DESKTOP XXL
+    @include media-query-desktop-xxl(){
+        .products-container{
+            .products{
+                width: 400px;
+                height: 400px;
+            }
         }
     }
     // RESPONSIVE TABLET
@@ -117,23 +126,24 @@
     height: auto;
     padding: 0px 50px;
     align-items: center;
-    margin: 100px 100px 50px 100px;
+    margin: 50px 100px 50px 100px;
     h2{
         padding-bottom: 12px;
     }
     p{
         padding-bottom: 12px;
     }
+    // RESPONSIVE DESKTOP XXL
+    @include media-query-desktop-xxl(){
+        margin: 50px 200px 100px 200px;
+    }
     // RESPONSIVE TABLET
     @include media-query-tablet(){
-        margin: 100px 0px;
-        p{
-            font-size: $sub-title;
-        }
+        margin: 50px 0px 100px 0px;
     }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
-        margin: 100px 0px;
+        margin: 50px 0px 100px 0px;
     }
 }
 

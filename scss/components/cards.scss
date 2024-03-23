@@ -2,9 +2,11 @@
 .horizontal-card{
     @include flexbox(row, center, none);
     height: 500px;
-    margin: 0px 100px 50px 100px;
+    margin: 0px 100px 100px 100px;
     .multimedia-container{
         width: 50%;
+        margin: 1px;
+        border: 1px solid black;
         @include flexbox(column, center, none);
         img, iframe{
             height: 100%;
@@ -17,13 +19,13 @@
         @include flexbox(column, center, center);
         padding: 25px;
         h2{
-            font-size: 24px;
-            padding-bottom: 12px;
+            font-size: 30px;
+            padding-bottom: 10px;
             text-align: center;
         }
         p{
             padding-bottom: 6px;
-            text-align: center;
+            text-align: justify;
         }
         ul{
             font-family: 'Montserrat', sans-serif;
@@ -34,6 +36,17 @@
     }
     &:nth-of-type(odd){
         flex-direction: row-reverse;
+    }
+    // RESPONSIVE DESKTOP XXL
+    @include media-query-desktop-xxl(){
+        .text{
+            h2{
+                font-size: $title-md;
+            }
+            p{
+                padding: 0px 30px 10px 30px;
+            }
+        }
     }
     // RESPONSIVE TABLET
     @include media-query-tablet(){
@@ -55,12 +68,7 @@
                 padding-bottom: 8px;
             }
             p{
-                font-size: $sub-title;
-                text-align: center;
                 padding-bottom: 8px;
-            }
-            ul{
-                font-size: $sub-title;
             }
         }
     }
@@ -85,7 +93,6 @@
             }
             p{
                 font-size: $paragraph;
-                text-align: center;
                 padding-bottom: 8px;
             }
             ul{

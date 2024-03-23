@@ -7,7 +7,7 @@ header{
             .header-items{
                 a{
                     color: $color-tertiary !important;
-                    font-size: 16px !important;
+                    font-size: $paragraph !important;
                     font-family: 'Bachelor', serif;
                     &:hover{
                         color: $color-secondary !important;
@@ -15,6 +15,18 @@ header{
                 }
             }
         }
+    }
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        .header{
+            div{
+                width: auto !important;
+                img{
+                    height: auto;
+                    width: auto;
+                }
+            }  
+        } 
     }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){

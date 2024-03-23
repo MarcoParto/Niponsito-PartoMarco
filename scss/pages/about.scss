@@ -14,6 +14,21 @@
         text-align: center;
         margin: 0px 200px;
     }
+    // RESPONSIVE TABLET
+     @include media-query-tablet(){
+        margin: 85px 0px 50px 0px;
+        img{
+            height: 75vh;
+            width: 100%;
+        }
+        div{
+            margin: 0px;
+        }
+        p{
+            font-size: $sub-title;
+            padding: 0px 20px 0px 20px;
+        }
+    }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         margin: 85px 0px 50px 0px;
@@ -52,6 +67,27 @@
         }
         p{
             padding-bottom: 6px;
+        }
+    }
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        flex-direction: column;
+        height: auto;
+        .image-container{
+            width: 100%;
+            img{
+                height: 400px;
+            }
+        }
+        .text{
+            width: 100%;
+            padding: 10px;
+        }
+        h2{
+            font-size: $title-md;
+        }
+        p{
+            font-size: $sub-title;
         }
     }
     // RESPONSIVE MOBILE
@@ -101,6 +137,29 @@
             border-radius: 8px;
             overflow: hidden;
             margin: 0px 20px;
+        }
+    }
+    // RESPOSIVE TABLET
+    @include media-query-tablet(){
+        h2{
+            font-size: $title-md;
+        }
+        h3{
+            font-size: $sub-title;
+            text-align: center;
+            padding: 20px;
+        }
+        .textbox-container{
+            flex-direction: column;
+            .textbox{
+                margin: 10px;
+                width: 400px;
+                height: 400px;
+                p{
+                    font-size: $sub-title;
+                    padding: 20px;
+                }
+            }
         }
     }
     // RESPOSIVE MOBILE
@@ -164,13 +223,29 @@
             }          
         }
     }
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        h2{
+            font-size: $title-md;
+        }
+        h3{
+            font-size: $sub-title;
+            text-align: center;
+        }
+        .gallery{
+            flex-direction: column;
+            .small-images{
+                flex-direction: row;
+            }
+        }
+    }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         h2{
             font-size: 30px;
         }
         h3{
-            font-size: 16px;
+            font-size: $paragraph;
             text-align: center;
         }
         .gallery{

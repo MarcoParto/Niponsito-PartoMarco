@@ -2,6 +2,10 @@
 
 // CLASS FOR RESPONSIVE
 .product-mobile{
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        flex-direction: column !important;
+    }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         flex-direction: column !important;
@@ -40,6 +44,30 @@
     .product-text{ 
         p{
             text-align: center;
+            font-size: $sub-title;
+        }
+    }
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        align-items: center;
+        padding: 20px 45px;
+        h2{
+            font-size: 32px;
+            padding-bottom: 8px;
+        }
+        h3{
+            font-size: $sub-title;
+            padding-bottom: 8px;
+        }
+        .products-container{
+            flex-direction: column;
+            .products{
+                width: 500px;
+            }
+        }
+        img{
+            height: 500px;;
+             padding-bottom: 16px;
         }
     }
     // RESPONSIVE MOBILE
@@ -51,7 +79,7 @@
             padding-bottom: 8px;
         }
         h3{
-            font-size: 16px;
+            font-size: $paragraph;
             padding-bottom: 8px;
         }
         .products-container{

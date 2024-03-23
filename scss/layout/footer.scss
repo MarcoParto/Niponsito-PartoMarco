@@ -35,6 +35,13 @@ footer{
             }
         }
     }
+    // RESPONSIBE DESKTOP XXL
+    @include media-query-desktop-xxl(){
+        .contenedor{
+            justify-content: space-around;
+        }
+    }
+
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         .contenedor{

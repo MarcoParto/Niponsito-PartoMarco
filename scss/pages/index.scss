@@ -23,6 +23,26 @@
         color: $color-tertiary;
         padding-left: 100px;
     }
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        padding-top: 100px;
+        background-position: 70% 70%;
+        justify-content: start;
+        h1{
+            padding-left: 0px;
+            text-align: center;
+        }
+        h2{
+            padding-left: 0px;
+            text-align: center;
+        }
+        h3{
+            padding-left: 0px;
+            padding-top: 70vh;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         padding-top: 90px;
@@ -72,6 +92,16 @@
             transition: all 1s ease;
         }
     }
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        .products-container{
+            flex-direction: column;
+            .products{
+                width: 500px;
+                height: 500px;
+            }
+        }
+    }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         .products-container{
@@ -94,6 +124,13 @@
     p{
         padding-bottom: 12px;
     }
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        margin: 100px 0px;
+        p{
+            font-size: $sub-title;
+        }
+    }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         margin: 100px 0px;
@@ -103,10 +140,14 @@
 // EDITING CLASS HORIZONTAL-CARDS
 .index-card{
     h2{
-        font-size: 40px !important;
+        font-size: $title-md !important;
     }
     .text{
         margin-bottom: 25px;
+    }
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        flex-direction: column !important;
     }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){

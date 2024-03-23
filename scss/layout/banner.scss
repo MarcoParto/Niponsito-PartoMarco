@@ -22,7 +22,7 @@
         align-items: center !important;
         margin-top: 65px;
         h1{
-            font-size: 40px;
+            font-size: $title-md;
             padding: 16px 0px;
         }
         h2{
@@ -31,7 +31,7 @@
             text-align: center;
         }
         h3{
-            font-size: 16px;
+            font-size: $paragraph;
             padding-bottom: 8px;
         }
     }

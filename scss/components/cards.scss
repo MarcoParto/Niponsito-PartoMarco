@@ -35,6 +35,35 @@
     &:nth-of-type(odd){
         flex-direction: row-reverse;
     }
+    // RESPONSIVE TABLET
+    @include media-query-tablet(){
+        flex-direction: column-reverse !important;
+        align-items: center;
+        height: auto;
+         margin: 0px 100px 50px 100px;
+        .multimedia-container{
+            height: 500px;
+            width: 500px;
+        }
+        .text{
+            width: auto;
+            padding: 20px 20px 0px 20px;
+            align-items: center;
+            h2{
+                font-size: 32px;
+                text-align: center;
+                padding-bottom: 8px;
+            }
+            p{
+                font-size: $sub-title;
+                text-align: center;
+                padding-bottom: 8px;
+            }
+            ul{
+                font-size: $sub-title;
+            }
+        }
+    }
     // RESPONSIVE MOBILE
     @include media-query-mobile(){
         flex-direction: column-reverse !important;
